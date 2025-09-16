@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --dark-color: #2e3440;
+  --dark-lite: #3b4252;
+  --light-gray: #434c5e;
+  --soft-blue-gray: #4c566a;
+  --text-color: rgb(240, 240, 244);
+}
+
+header {
+  position: fixed;
+  height: 71px;
+  width: 100vw;
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+}
+.header-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 90px 0px 90px;
+}
+.logo img {
+  height: 40px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo h1 {
+  color: var(--text-color);
+  font-size: 20px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links ul {
+  display: flex;
+}
+.links ul li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.links ul li a {
+  text-decoration: none;
+
+  color: var(--text-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.github-icon {
+  height: 15px;
+  transition: transform 0.3s ease, stroke 0.3s ease, fill 0.3s ease;
+  stroke: white;
+}
+.links ul li:hover .github-icon {
+  transform: translateY(-2px);
+  stroke: #0061f2;
+}
+.download-button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--text-color);
+  border: 2px solid #0061f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 36px;
+  border-radius: 5px;
+}
+.download-button:hover {
+  transition: 0.3s;
+  background-color: #0061f2;
+}
