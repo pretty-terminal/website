@@ -90,7 +90,7 @@ header {
   transition: 0.3s;
   background-color: #0061f2;
 }
-/* aside */
+/* Aside */
 .aside-div {
   padding: 90px 0px 0px 20px;
   background-color: var(--dark-color);
