@@ -1,4 +1,4 @@
 flask
 markdown
 requests
-markdown_it
+markdown-it-py
