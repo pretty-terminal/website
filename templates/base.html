@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Pretty {% endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='src/favicon/pretty_terminal_circle_image.png') }}" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='header.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='about-style/style.css') }}"
+    />
+  </head>
+
+  <body>
+   {% include "header.html" %}
+   
+    <main>
+  {% include "aside.html" %}
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <div class="div-footer">
+        <div class="box1"><h2>Gurjaka</h2></div>
+        <div class="box2"><h2>© 2025 Gurjaka</h2></div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("GitHub Markdown ფაილი ვერ მოიტანეს!");
+          }
+          return response.text();
+        })
+        .then((markdownContent) => {
+          const htmlContent = marked(markdownContent);
+          document.getElementById("content").innerHTML = htmlContent;
+        })
+        .catch((error) => {
+          console.error(error); // ჩაწერეთ Console-ში შეცდომა
+          document.getElementById("content").innerHTML =
+            "<p>ვერ მოიტანეს Markdown ფაილი.</p>";
+        });
+    </script>
+<script src="{{url_for('static',filename='script.js')}}"></script>
+  </body>
+</html>
