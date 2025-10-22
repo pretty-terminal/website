@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+  --background-color: #242933;
+  --dark-color: #2e3440;
+  --dark-lite: #3b4252;
+  --light-gray: #434c5e;
+  --soft-blue-gray: #4c566a;
+  --text-color: rgb(240, 240, 244);
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+}

@@ -1,0 +1,32 @@
+.div-main a{
+  color: rgb(255, 255, 255);
+}
+.div-main td {
+  background-color:  #3d444d; ;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+.div-main td:hover {
+  background-color:  #535c68; ;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.div-main th {
+  border: 1px solid rgb(92, 90, 90) ;
+}
+
+.div-main td strong {
+  color: rgb(255, 255, 255);
+}
+.div-main hr {
+  margin: 15px 0px 15px 0px;
+  border-color: 2px solid #3d444d; /* This changes the color of the horizontal line */
+}
+.div-main ul {
+  margin: 10px 0px 10px 20px ;
+  
+}
+.div-main {
+  color: rgb(175, 174, 174);
+}
